@@ -23,7 +23,6 @@ class ReminderCalendar extends StatelessWidget {
         children: [
           _title(),
           _buildCalendar(context),
-          _copyrights(),
         ],
       ),
     );
@@ -72,15 +71,6 @@ class ReminderCalendar extends StatelessWidget {
     );
   }
 
-  _copyrights() {
-    return const Text(
-      '© 2022 Codelitt Inc All rights reserved',
-      style: TextStyle(
-        fontSize: 12,
-        color: Colors.white,
-      ),
-    );
-  }
 
   BoxDecoration _buildDecoration() {
     return const BoxDecoration(
